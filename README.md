@@ -1,1 +1,1 @@
-# EPIC_ARCHERY_LAST_STAGE_04
+# Project Template 26
