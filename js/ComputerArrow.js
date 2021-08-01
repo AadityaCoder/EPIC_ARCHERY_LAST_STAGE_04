@@ -26,7 +26,11 @@ class ComputerArrow {
 
     Matter.Body.setStatic(this.body, false);
   }
-
+remove(i){
+    Matter.World.remove(world,ComputerArrow[i].body);
+    ComputerArrow.splice(i,1);
+    
+  }
   display() {
     var tmpAngle;
     if (this.body.velocity.y === 0) {
