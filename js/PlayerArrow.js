@@ -19,6 +19,11 @@ class PlayerArrow {
       Matter.Body.setStatic(this.body, false);
       Matter.Body.setVelocity(this.body, { x: velocity.x, y: velocity.y });
     }
+    remove(i){
+    Matter.World.remove(world,ComputerArrow[i].body);
+    ComputerArrow.splice(i,1);
+    
+  }
     display() {
         var pos = this.body.position;
         var angle = this.body.angle;
